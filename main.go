@@ -1,13 +1,26 @@
 package main
 
 import "fmt"
-import modul "github.com/Muhammad-Iqbal11111/moduleProject"
+import moduleProject "github.com/Muhammad-Iqbal11111/moduleProject"
+
+type Strukpembayaran struct {
+	Nama string
+}
+type DataPelanggan struct {
+	Nama         string
+	Alamat string
+	Umur         int8
+	Pekerjaan string
+}
+
+
+
 func main(){
 	
-	modul.Welcome("Muhammad Iqbal", "Y" string)
+	moduleProject.Welcome("Muhammad Iqbal", "Y" string)
 
 	var pilihanBaju = [] string{"Kemeja Formal", "Kemeja Casual", "Kaos Krah", "Kaos Oblong"}
-	modul.ItemPakaian("Muhammad Iqbal", pilihanBaju[4])
+	moduleProject.ItemPakaian("Muhammad Iqbal", pilihanBaju[4])
 	for _ , baju := range pilihanBaju {
 		if baju ==  "Kemeja Formal"{
 			harga := 200000
@@ -26,9 +39,12 @@ func main(){
 			hargaPokok:=20000
 			fmt.Println("Harga kaos oblong ini adalah", harga)
 		}
-		x, y := modul.ProfitSale(harga, hargaPokok)
+		x, y := moduleProject.ProfitSale(harga, hargaPokok)
 	fmt.Printf("Keuntungan adalah %.2f dengan persentase keuntungan %.2f percen \n", x, y
-	modul.Pembayaran()
+	modulProject.Pembayaran()
+
+	struk1 := Strukpembayaran(Nama: "Muhammad Iqbal")
+	struk1.grandOpening("Berkah")
 	}
 
 	defer fmt.Println("terimakasih sudah berbelanja")
