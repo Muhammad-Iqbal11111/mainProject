@@ -12,9 +12,6 @@ type DataPelanggan struct {
 	Umur         int8
 	Pekerjaan string
 }
-
-
-
 func main(){
 	
 	moduleProject.Welcome("Muhammad Iqbal", "Y" string)
@@ -40,12 +37,21 @@ func main(){
 			fmt.Println("Harga kaos oblong ini adalah", harga)
 		}
 		x, y := moduleProject.ProfitSale(harga, hargaPokok)
-	fmt.Printf("Keuntungan adalah %.2f dengan persentase keuntungan %.2f percen \n", x, y
-	modulProject.Pembayaran()
+		fmt.Printf("Keuntungan adalah %.2f dengan persentase keuntungan %.2f percen \n", x, y
+		modulProject.Pembayaran()
 
-	struk1 := Strukpembayaran(Nama: "Muhammad Iqbal")
-	struk1.grandOpening("Berkah")
+		struk1 := Strukpembayaran(Nama: "Muhammad Iqbal")
+		struk1.grandOpening("Berkah")
 	}
-
 	defer fmt.Println("terimakasih sudah berbelanja")
+
+	Pelanggan1 := DataPelanggan{
+		Nama:         "Muhammad Iqbal",
+		Alamat : "Padang",
+		Umur:         25,
+		Pekerjaan:        "Staf Operasional dan Pembayaran",
+	}
+	fmt.Println(Pelanggan1.Nama)
+	fmt.Println(Pelanggan1.Alamat)
+
 }
