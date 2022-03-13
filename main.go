@@ -55,3 +55,5 @@ func main(){
 	fmt.Println(Pelanggan1.Alamat)
 
 }
+func (struk Strukpembayaran) grandOpening(toko string) {
+	fmt.Println("terimakasih telah berbelanja di toko ", toko, "semoga senang dengan layanan kami", struk.Nama)
